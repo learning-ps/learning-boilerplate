@@ -14,3 +14,26 @@ This repository leverages Jetify Devbox to provide a convenient and reliable dev
 
 > [!NOTE]
 > This is a learning repository, things may or may not work that are found here.
+
+## Examples
+
+### Running the examples
+
+`example-module`
+
+Interactive
+
+```
+boilerplate \
+  --template-url example-module \
+  --output-folder tmp/terraform-module
+```
+
+Non Interactive
+```
+boilerplate \
+  --template-url example-module \
+  --output-folder tmp/terraform-module \
+  --non-interactive \
+  --var-file example-module-vars.yml
+```

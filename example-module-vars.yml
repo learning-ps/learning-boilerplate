@@ -1,0 +1,3 @@
+ModuleName: terraform-example
+CopyrightInfo: Copyright 2025 Peter Sellars
+TerraformVersion: 1.11.3

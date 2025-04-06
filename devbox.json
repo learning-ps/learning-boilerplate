@@ -1,7 +1,10 @@
 {
     "packages": [
       "nixpkgs#curl",
-      "./nix#boilerplate"
+      "./nix#boilerplate",
+      "terraform@1.11.3",
+      "terragrunt@0.76.6",
+      "tflint@0.55.1"
     ]
   }
   

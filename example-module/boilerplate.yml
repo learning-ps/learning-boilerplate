@@ -1,0 +1,14 @@
+variables:
+  - name: ModuleName
+    description: The name of the module
+    type: string
+
+  - name: CopyrightInfo
+    description: Copyright information to put in the README. Typically "Copyright <year> <company>."
+    type: string
+    default: ""
+
+  - name: TerraformVersion
+    description: The version of Terraform to use
+    type: string
+    default: 1.11.3

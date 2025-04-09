@@ -1,0 +1,20 @@
+variables:
+  - name: ModuleName
+    description: The name of the module
+    type: string
+
+  - name: ModuleSource
+    description: The source URL (or file path) to use for the module
+    type: string
+
+  - name: TerraformVersion
+    description: The version of Terraform to use
+    type: string
+    default: 1.11.3
+
+hooks:
+  after:
+    # Format the code
+    - command: terraform
+      args:
+        - fmt

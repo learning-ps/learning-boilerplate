@@ -1,6 +1,8 @@
 # Learning Boilerplate
 Repository to learn about and explore how to utilise the [Boilerplate](https://github.com/gruntwork-io/boilerplate) OSS cross platform project generator/scaffolding tool.
 
+Initial learning resource: [Introducing Boilerplate](https://blog.gruntwork.io/introducing-boilerplate-6d796444ecf6)
+
 ## Devbox
 This repository leverages Jetify Devbox to provide a convenient and reliable development environment.
 
@@ -26,14 +28,24 @@ Interactive
 ```
 boilerplate \
   --template-url example-module \
-  --output-folder tmp/terraform-module
+  --output-folder outputs/terraform-module
 ```
 
 Non Interactive
 ```
 boilerplate \
   --template-url example-module \
-  --output-folder tmp/terraform-module \
+  --output-folder outputs/terraform-module \
   --non-interactive \
   --var-file example-module-vars.yml
+```
+
+`terraform-module-full`
+- includes terraform-example
+
+Interactive
+```
+boilerplate \
+  --template-url terraform-module-full \
+  --output-folder outputs/terraform-module-full 
 ```

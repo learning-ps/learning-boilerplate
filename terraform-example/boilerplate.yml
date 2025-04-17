@@ -18,3 +18,4 @@ hooks:
     - command: terraform
       args:
         - fmt
+      dir: "{{ outputFolder }}"

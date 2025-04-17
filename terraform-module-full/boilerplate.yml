@@ -26,3 +26,12 @@ dependencies:
         description: The source URL (or file path) to use for the module
         type: string
         default: "../../modules/{{ .ModuleName | kebabcase }}"
+
+  - name: test
+    template-url: ../terraform-test
+    output-folder: "tests"
+    variables:
+      - name: ExamplePath
+        description: The source URL (or file path) to use for the module
+        type: string
+        default: "../examples/{{ .ModuleName | kebabcase }}"

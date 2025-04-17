@@ -49,3 +49,27 @@ boilerplate \
   --template-url terraform-module-full \
   --output-folder outputs/terraform-module-full 
 ```
+
+Non Interactive
+```
+boilerplate \
+  --template-url terraform-module-full \
+  --output-folder outputs/terraform-module \
+  --non-interactive \
+  --var-file example-module-vars.yml
+```
+
+Run the generated example
+```
+cd outputs/terraform-module-full/examples/terraform-example
+terraform init
+terraform apply
+```
+
+Run the generated automated test
+```
+cd outputs/terraform-module-full/tests
+go mod init terraform-module-full
+go mod tidy'
+go test -v
+```
